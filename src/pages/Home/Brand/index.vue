@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2022-06-21 00:19:37
- * @LastEditTime: 2022-06-21 00:21:53
- * @LastEditors: your name
+ * @LastEditTime: 2022-08-08 15:48:27
+ * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \project-SPH\app\src\pages\Home\Brand\index.vue
 -->

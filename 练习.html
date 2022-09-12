@@ -1,0 +1,94 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-09-06 17:24:44
+ * @LastEditTime: 2022-09-07 17:23:16
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \project-SPH\app\练习.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let str = "get-element-by-id"
+    // // function haha(str) {
+    // //   let arr = str.split("-")
+    // //   console.log(arr)
+    // //   let newArr = arr.reduce((acc,curr) => {
+    // //     acc.push(curr.charAt(0).toUpperCase()+curr.substr(1, curr.length - 1))     
+    // //     return acc
+    // //   },[])
+    // //   console.log(newArr)
+    // // }
+    // function haha(str) {
+    //   let arr = str.split("-")
+    //   console.log(arr)
+    //   let newArr = arr.map(item => {
+    //     let item1 = item.split("")[0].toUpperCase() + item.split("").splice(1, item.length - 1)
+    //     return item1.split(",").join("")
+    //   })
+    //   // let newArr = arr.map((item, idx) => {
+    //   //   return item.charAt(0).toUpperCase()+item.substr(1, item.length - 1)  
+    //   // },[])
+    //   let newArr1 = newArr.join("")
+    //   console.log(newArr1)
+    // }
+    // haha(str)
+    // var arr1 = [1, 2, 3, 4]
+    // var arr2 = arr1.reduce((acc,curr) => {
+    //   return acc + curr
+    // }, [])
+    // console.log(arr2)
+    // let url = "http://item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e"
+    // let newStr = url.split("?")
+    // let accArr = newStr[1].split("&").reduce((acc, curr) => {
+    //   let key = curr.split("=")[0]
+    //   let value = curr.split("=")[1]
+    //   acc[key] = value
+    //   return acc
+    // }, {})
+    // console.log(accArr)
+    // let varnumberArray=[3,6,2,4,1,5]
+    // let reverseNum = varnumberArray.reverse()
+    // console.log(reverseNum)
+    // let sortNum = varnumberArray.sort((a, b) => {
+    //   return b-a
+    // })
+    // console.log(sortNum)
+    // let num = 12345678
+    // console.log(String(num).split(""))
+    // let numArr = String(num).split("").reverse()
+    // console.log(numArr)
+    // let result = numArr.reduce((acc, curr, idx) => {
+    //   acc.push(numArr.splice(0, 3))
+    //   return acc
+    // }, [])
+    // result.push(numArr)
+    // let numStr = result.reverse().map((item, idx) => {
+    //   item.reverse()
+    //   if(idx != result.length - 1) {
+    //     item.push(",")
+    //   }
+    //   item = item.join("")
+    //   return item
+    // })
+    // console.log(numStr.join(""))
+    let name = 'sunny';
+    let age = 21;
+    let str = '你好，${name} 已经 ${age}岁了'
+    str = str.replace(/\$\{([^}]*)\}/g, function () {
+      console.log(arguments)
+      return eval(arguments[1]);
+    })
+  </script>
+</body>
+
+</html>
